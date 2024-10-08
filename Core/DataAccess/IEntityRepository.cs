@@ -1,13 +1,12 @@
-﻿using Entities.Abstract;
-using Entities.Concrete;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace DataAccess.Abstract
+//core katmanı diğer katmanları referans almaz.
+namespace Core.DataAccess
 {
     //where kısmı generic constraint.Yani generic kısıt. sadece refarns tip alması için class yazdık. int vs olmamalı. , sadece Ientity i impelemente olan classları alabilir.
     //class:referans tip olması için,

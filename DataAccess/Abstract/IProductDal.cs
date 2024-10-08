@@ -1,4 +1,6 @@
-﻿using Entities.Concrete;
+﻿using Core.DataAccess;
+using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,7 @@ namespace DataAccess.Abstract
     // Dal hangi katmana karşılık geldiği.Data Access Layer. Dao da denir.
     public interface IProductDal:IEntityRepository<Product>
     {
+        List<ProductDetailDto> GetProductDetail();
         //List<Product> GetAll();
         //void Add(Product product);
         //void Update(Product product);
@@ -19,3 +22,4 @@ namespace DataAccess.Abstract
         //List<Product> GetAllByCategory(int categoryId);
     }
 }
+//Code Refactoring

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Abstract
+namespace Core.Entities
 {
     //bu bir veri tabanı nesnesi demek için oluşturuldu.
     //IEntitiy impelemente eden her class bir veritabanı tablosudur.
