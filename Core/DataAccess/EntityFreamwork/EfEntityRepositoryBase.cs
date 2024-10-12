@@ -10,6 +10,7 @@ using System.Linq.Expressions;
 
 namespace Core.DataAccess.EntityFreamwork
 {
+    //product ve northwind içerecei için
     public class EfEntityRepositoryBase<TEntity,TContext> :IEntityRepository<TEntity>
         where TEntity : class,IEntity, new() 
         where TContext : DbContext,new()

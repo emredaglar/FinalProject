@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
+    //ıpordal bana kızma bunların hepsi base içinde var. ee neden Iprdal var? çünkü sadece efenrep tüm efler için bir base. biz sadece product için bir istek yaparsak ıproductdal içinde kullanacağız ve buraya yazacağız.
     public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {
         //    public void Add(Product product)
