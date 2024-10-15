@@ -40,7 +40,7 @@ namespace Business.Concrete
             //iş kodlarından geçtiğini varsayıyoruz.
             //ifler vs. yetkisi var mı? varsa.-->
 
-            if (DateTime.Now.Hour==18)
+            if (DateTime.Now.Hour==11)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
